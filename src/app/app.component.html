@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <img src="assets/Genieempty.png" alt="">
-  <h1>
+<div >
+  <img src="assets/Genieempty.png" height="50px" alt="" style="float:left">
+  <h1 style="margin:50px;">
     Your wish is my command!
   </h1>
 </div>
 <button (click)="onOpen()">open</button>
 <p>{{fileName}}</p>
-<button (click)="onSave()">save</button>
-<p>{{message}}</p>
+<ul>
+  <li *ngFor="let target of targets">{{target}}</li>
+</ul>
