@@ -7,6 +7,10 @@
 </div>
 <button (click)="onOpen()">open</button>
 <p>{{fileName}}</p>
+<button (click)="onLoad()">load</button>
 <ul>
-  <li *ngFor="let target of targets">{{target}}</li>
+  <li *ngFor="let target of targets" (click)="onTargetSelected(target)">{{target}}</li>
 </ul>
+<button (click)="onBrowse()">browse</button>
+<p>{{folderName}}</p>
+<button (click)="onSave()">save</button>

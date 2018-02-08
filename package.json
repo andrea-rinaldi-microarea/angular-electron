@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build && electron .",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,7 +23,9 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "csv-parse": "^2.0.2",
     "rxjs": "^5.5.6",
+    "xml": "^1.0.1",
     "xml2js": "^0.4.19",
     "zone.js": "^0.8.19"
   },
